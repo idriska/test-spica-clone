@@ -1,0 +1,37 @@
+_id: 60226f58deaf9a002d6df240
+name: Blog Function
+description: Desc of Functions
+language: javascript
+timeout: 50
+triggers:
+  addArticle:
+    active: true
+    type: bucket
+    options:
+      type: INSERT
+      bucket: 61d5629b8d6d5d002effa0ce
+  addReview:
+    active: true
+    type: bucket
+    options:
+      type: INSERT
+      bucket: 61d5629d8d6d5d002effa0d1
+  deleteArticle:
+    active: true
+    type: bucket
+    options:
+      type: DELETE
+      bucket: 61d5629f8d6d5d002effa0d7
+  deleteReview:
+    active: true
+    type: bucket
+    options:
+      type: DELETE
+      bucket: 61d562a28d6d5d002effa0dd
+env:
+  SECRET_API_KEY: 727vw819kkxwu2zu
+  ARTICLE_BUCKET_ID: 60226f55deaf9a002d6df23d
+  CATEGORY_BUCKET_ID: 60226f54deaf9a002d6df23c
+  CONTACT_BUCKET_ID: 60226f52deaf9a002d6df23b
+  REVIEW_BUCKET_ID: 60226f56deaf9a002d6df23e
+memoryLimit: 100

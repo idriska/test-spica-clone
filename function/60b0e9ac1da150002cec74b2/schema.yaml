@@ -1,0 +1,16 @@
+_id: 60b0e9ac1da150002cec74b2
+name: Auth API
+description: 2FA user authentication
+language: javascript
+timeout: 10
+triggers:
+  default:
+    options:
+      method: Get
+      path: /qwe1dasvxqeqw
+      preflight: true
+    type: http
+    active: true
+env:
+  AUTH_APIKEY: 1cywd18kp8c3kg6
+memoryLimit: 100

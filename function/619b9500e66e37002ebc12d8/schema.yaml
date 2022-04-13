@@ -1,0 +1,17 @@
+_id: 619b9500e66e37002ebc12d8
+name: firehose-test
+language: javascript
+timeout: 60
+triggers:
+  default:
+    type: firehose
+    active: true
+    options:
+      event: "**"
+  message:
+    options:
+      event: my-message
+    type: firehose
+    active: true
+env: {}
+memoryLimit: 100

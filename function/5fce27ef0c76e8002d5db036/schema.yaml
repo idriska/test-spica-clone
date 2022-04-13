@@ -1,0 +1,43 @@
+_id: 5fce27ef0c76e8002d5db036
+name: Dashboard
+description: Test
+language: javascript
+timeout: 60
+triggers:
+  line:
+    options:
+      method: Get
+      path: /line
+      preflight: true
+    type: http
+    active: true
+  table:
+    options:
+      method: Get
+      path: /table
+      preflight: true
+    type: http
+    active: true
+  bar:
+    options:
+      method: Get
+      path: /bar
+      preflight: true
+    type: http
+    active: true
+  exampleReq:
+    options:
+      method: Post
+      path: /exampleReq
+      preflight: true
+    type: http
+    active: true
+  testNewComponent:
+    options:
+      method: Get
+      path: /testNewComponent
+      preflight: true
+    type: http
+    active: true
+env: {}
+memoryLimit: 100

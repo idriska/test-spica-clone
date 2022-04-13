@@ -1,0 +1,13 @@
+_id: 60ed89f39634fb002d3462a3
+name: new fn
+description: test
+language: javascript
+timeout: 60
+triggers:
+  default:
+    type: firehose
+    active: false
+    options:
+      event: "*"
+env: {}
+memoryLimit: 100

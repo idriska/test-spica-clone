@@ -1,0 +1,14 @@
+_id: 60ee8fd49634fb002d3462a5
+name: mgfn
+description: test
+language: javascript
+timeout: 53
+triggers:
+  default:
+    type: database
+    active: true
+    options:
+      collection: bucket_61d562a58d6d5d002effa0e3
+      type: UPDATE
+env: {}
+memoryLimit: 100

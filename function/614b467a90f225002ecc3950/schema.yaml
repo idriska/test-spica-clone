@@ -1,0 +1,14 @@
+_id: 614b467a90f225002ecc3950
+name: testo
+language: javascript
+timeout: 60
+triggers:
+  default:
+    type: http
+    active: true
+    options:
+      method: Get
+      path: /testwebsocket
+      preflight: true
+env: {}
+memoryLimit: 100

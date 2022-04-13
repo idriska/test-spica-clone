@@ -1,0 +1,88 @@
+_id: 61d562ac8d6d5d002effa0f2
+name: Dashboard Cards
+description: City Hooks
+language: javascript
+timeout: 9.7
+triggers:
+  addCityDashboard:
+    active: true
+    type: http
+    options:
+      method: Get
+      path: /addCityDashboard
+      preflight: true
+  createCityFromDashboard:
+    active: true
+    type: http
+    options:
+      method: Post
+      path: /createCityFromDashboard
+      preflight: true
+  addProductDashboard:
+    active: true
+    type: http
+    options:
+      method: Get
+      path: /addProductDashboard
+      preflight: true
+  createProductFromDashboard:
+    active: true
+    type: http
+    options:
+      method: Post
+      path: /createProductFromDashboard
+      preflight: true
+  createWarDashboard:
+    active: true
+    type: http
+    options:
+      method: Get
+      path: /createWarDashboard
+      preflight: true
+  createWarFromDashboard:
+    active: true
+    type: http
+    options:
+      method: Post
+      path: /createWarFromDashboard
+      preflight: true
+  createAgreementDashboard:
+    active: true
+    type: http
+    options:
+      method: Get
+      path: /createAgreementDashboard
+      preflight: true
+  createAgreementFromDashboard:
+    active: true
+    type: http
+    options:
+      method: Post
+      path: /createAgreementFromDashboard
+      preflight: true
+  createEmbargoDashboard:
+    active: true
+    type: http
+    options:
+      method: Get
+      path: /createEmbargoDashboard
+      preflight: true
+  createEmbargoFromDashboard:
+    active: true
+    type: http
+    options:
+      method: Post
+      path: /createEmbargoFromDashboard
+      preflight: true
+env:
+  CITY_BUCKET_ID: 61d5629e8d6d5d002effa0d4
+  COUNTRY_BUCKET_ID: 61d5629d8d6d5d002effa0d1
+  PRODUCT_BUCKET_ID: 61d5629f8d6d5d002effa0d7
+  CITY_SYSTEM_BUCKET_ID: 61d562a18d6d5d002effa0da
+  NO_DEVKIT_DATABASE_WARNING: "TRUE"
+  WAR_BUCKET_ID: 61d562a48d6d5d002effa0e0
+  AGREEMENT_BUCKET_ID: 61d562a58d6d5d002effa0e3
+  EMBARGO_BUCKET_ID: 61d562a68d6d5d002effa0e6
+  NEWS_BUCKET_ID: 61d562a98d6d5d002effa0ec
+  USER_PRODUCT_BUCKET_ID: 61d562a28d6d5d002effa0dd
+  USER_BUCKET_ID: 61d5629b8d6d5d002effa0ce

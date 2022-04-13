@@ -1,0 +1,78 @@
+_id: 61d562a18d6d5d002effa0da
+title: City System
+description: Describe your new bucket
+icon: view_stream
+primary: count
+readOnly: false
+history: false
+properties:
+  city:
+    type: relation
+    title: city
+    description: Description of the city input
+    options:
+      position: left
+    relationType: onetoone
+    dependent: false
+    bucketId: 61d5629e8d6d5d002effa0d4
+  product:
+    type: relation
+    title: product
+    description: Description of the product input
+    options:
+      position: left
+    relationType: onetoone
+    dependent: false
+    bucketId: 61d5629f8d6d5d002effa0d7
+  count:
+    type: number
+    title: count
+    description: Description of the count input
+    options:
+      position: left
+    minimum: 0
+    default: 0
+  consumption_rate:
+    type: number
+    title: consumption_rate
+    description: Description of the consumption_rate input
+    options:
+      position: right
+    minimum: 0
+    default: 0
+  production_rate:
+    type: number
+    title: production_rate
+    description: Description of the production_rate input
+    options:
+      position: right
+    minimum: 0
+    default: 0
+  purchase_price:
+    type: number
+    title: purchase_price
+    description: Description of the purchase_price input
+    options:
+      position: right
+    minimum: 0
+    default: 0
+  sale_price:
+    type: number
+    title: sale_price
+    description: Description of the sale_price input
+    options:
+      position: right
+    minimum: 0
+    default: 0
+  storage:
+    type: number
+    title: storage
+    description: Description of the storage input
+    options:
+      position: bottom
+    minimum: 0
+    default: 0
+acl:
+  write: true==true
+  read: true==true
+order: 7

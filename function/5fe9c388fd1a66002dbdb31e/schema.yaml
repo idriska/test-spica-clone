@@ -1,0 +1,21 @@
+_id: 5fe9c388fd1a66002dbdb31e
+name: Bad Words Detection
+description: Bad Words
+language: javascript
+timeout: 40.9
+triggers:
+  default:
+    options:
+      bucket: 61d562a98d6d5d002effa0ec
+      type: INSERT
+    type: bucket
+    active: true
+  test:
+    options:
+      method: Get
+      path: /test123
+      preflight: true
+    type: http
+    active: true
+env: {}
+memoryLimit: 100

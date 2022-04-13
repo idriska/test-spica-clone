@@ -1,0 +1,45 @@
+_id: 61d562ad8d6d5d002effa0f5
+name: Schedules
+description: Schedules
+language: javascript
+timeout: 12
+triggers:
+  default:
+    active: true
+    type: schedule
+    options:
+      frequency: 0 * * * *
+      timezone: Europe/Istanbul
+  checkWar:
+    active: true
+    type: schedule
+    options:
+      frequency: 0 * * * *
+      timezone: Europe/Istanbul
+  checkAgreement:
+    active: true
+    type: schedule
+    options:
+      frequency: 0 * * * *
+      timezone: Europe/Istanbul
+  checkEmbargo:
+    active: true
+    type: schedule
+    options:
+      frequency: 0 * * * *
+      timezone: Europe/Istanbul
+  tradeEvent:
+    active: true
+    type: http
+    options:
+      method: Post
+      path: /tradeEvent
+      preflight: true
+env:
+  CITY_SYSTEM_BUCKET_ID: 61d562a18d6d5d002effa0da
+  CITY_BUCKET_ID: 61d5629e8d6d5d002effa0d4
+  WAR_BUCKET_ID: 61d562a48d6d5d002effa0e0
+  AGREEMENT_BUCKET_ID: 61d562a58d6d5d002effa0e3
+  EMBARGO_BUCKET_ID: 61d562a68d6d5d002effa0e6
+  NO_DEVKIT_DATABASE_WARNING: "TRUE"
+  PRODUCT_BUCKET_ID: 61d5629f8d6d5d002effa0d7

@@ -1,0 +1,15 @@
+_id: 60ee8fea9634fb002d3462a7
+name: httptest
+description: test
+language: javascript
+timeout: 36.5
+triggers:
+  default:
+    type: http
+    active: true
+    options:
+      method: Get
+      path: /asdqwe
+      preflight: true
+env: {}
+memoryLimit: 100

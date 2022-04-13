@@ -1,0 +1,37 @@
+_id: 61d55f4b8d6d5d002eff9fcb
+name: 🎮  Update Triggers
+description: Update Trgiggers
+language: javascript
+timeout: 12
+triggers:
+  warUpdate:
+    active: true
+    type: bucket
+    options:
+      type: UPDATE
+      bucket: 61d562a98d6d5d002effa0ec
+  agreementUpdate:
+    active: true
+    type: bucket
+    options:
+      type: UPDATE
+      bucket: 61d562a58d6d5d002effa0e3
+  embargoUpdate:
+    active: true
+    type: bucket
+    options:
+      type: UPDATE
+      bucket: 61d562a68d6d5d002effa0e6
+  userInsert:
+    active: true
+    type: database
+    options:
+      type: INSERT
+      collection: bucket_61e562230cffb9002d35cabe
+env:
+  NEWS_BUCKET_ID: 61d55f458d6d5d002eff9fbf
+  COUNTRY_BUCKET_ID: 61d55f398d6d5d002eff9fa4
+  NO_DEVKIT_DATABASE_WARNING: "TRUE"
+  PRODUCT_BUCKET_ID: 61d55f3b8d6d5d002eff9faa
+  USER_PRODUCT_BUCKET_ID: 61d55f3e8d6d5d002eff9fb0
+memoryLimit: 100

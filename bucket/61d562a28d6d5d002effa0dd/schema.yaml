@@ -1,0 +1,53 @@
+_id: 61d562a28d6d5d002effa0dd
+title: User Product
+description: User Products
+icon: view_stream
+primary: amount
+readOnly: false
+history: false
+properties:
+  user:
+    type: relation
+    title: user
+    description: Description of the user input
+    options:
+      position: bottom
+    relationType: onetoone
+    dependent: false
+    bucketId: 61d5629b8d6d5d002effa0ce
+    primary: username
+  product:
+    type: relation
+    title: product
+    description: Description of the product input
+    options:
+      position: bottom
+    relationType: onetoone
+    dependent: false
+    bucketId: 61d5629f8d6d5d002effa0d7
+    primary: title
+  amount:
+    type: number
+    title: amount
+    description: Description of the amount input
+    options:
+      position: bottom
+    minimum: 0
+    default: 0
+  updated_at:
+    type: date
+    title: updated_at
+    description: Description of the updated_at input
+    options:
+      position: bottom
+    default: :updated_at
+  test_dat:
+    type: date
+    title: test_dat
+    description: Description of the test_dat input
+    options:
+      position: bottom
+acl:
+  write: true==true
+  read: true==true
+order: 8

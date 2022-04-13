@@ -1,0 +1,14 @@
+_id: 624da04314c277002de9bdd4
+name: Git Test
+language: javascript
+timeout: 50
+triggers:
+  default:
+    type: http
+    active: true
+    options:
+      method: Get
+      path: /git
+      preflight: true
+env: {}
+memoryLimit: 100

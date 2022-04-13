@@ -1,0 +1,14 @@
+_id: 61f29dd862f816002c029827
+name: Test Github Connection
+language: javascript
+timeout: 6
+triggers:
+  default:
+    type: http
+    active: true
+    options:
+      method: Post
+      path: /testGithubConnection
+      preflight: true
+env: {}
+memoryLimit: 100

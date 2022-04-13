@@ -1,0 +1,19 @@
+_id: 6218f4c12db52d002ce905ac
+title: New Bucket
+description: Describe your new bucket
+icon: view_stream
+primary: title
+readOnly: false
+history: false
+properties:
+  title:
+    type: string
+    title: title
+    description: Description of the title input
+    options:
+      position: bottom
+      translate: true
+acl:
+  write: true==true
+  read: true==true
+order: 11

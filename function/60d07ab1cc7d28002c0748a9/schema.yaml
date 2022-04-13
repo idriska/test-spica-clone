@@ -1,0 +1,15 @@
+_id: 60d07ab1cc7d28002c0748a9
+name: Test User Duels Dashboard
+description: Test User Duels Dashboard
+language: javascript
+timeout: 84
+triggers:
+  userDashboardDuels:
+    options:
+      method: Get
+      path: /userDashboardDuels
+      preflight: true
+    type: http
+    active: true
+env: {}
+memoryLimit: 100

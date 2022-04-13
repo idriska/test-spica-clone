@@ -1,0 +1,45 @@
+_id: 61d55f4a8d6d5d002eff9fc8
+name: 🎮  Schedules
+description: Schedules
+language: javascript
+timeout: 12
+triggers:
+  default:
+    active: true
+    type: schedule
+    options:
+      frequency: 0 * * * *
+      timezone: Europe/Istanbul
+  checkWar:
+    active: true
+    type: schedule
+    options:
+      frequency: 0 * * * *
+      timezone: Europe/Istanbul
+  checkAgreement:
+    active: true
+    type: schedule
+    options:
+      frequency: 0 * * * *
+      timezone: Europe/Istanbul
+  checkEmbargo:
+    active: true
+    type: schedule
+    options:
+      frequency: 0 * * * *
+      timezone: Europe/Istanbul
+  tradeEvent:
+    active: true
+    type: http
+    options:
+      method: Post
+      path: /tradeEvent
+      preflight: true
+env:
+  CITY_SYSTEM_BUCKET_ID: 61d55f3d8d6d5d002eff9fad
+  CITY_BUCKET_ID: 61d55f3a8d6d5d002eff9fa7
+  WAR_BUCKET_ID: 61d55f3f8d6d5d002eff9fb3
+  AGREEMENT_BUCKET_ID: 61d55f418d6d5d002eff9fb6
+  EMBARGO_BUCKET_ID: 61d55f428d6d5d002eff9fb9
+  NO_DEVKIT_DATABASE_WARNING: "TRUE"
+  PRODUCT_BUCKET_ID: 61d55f3b8d6d5d002eff9faa

@@ -1,0 +1,35 @@
+_id: 614c2efb90f225002ecc39dc
+name: OAuth Configurations
+language: javascript
+timeout: 6
+triggers:
+  loadGoogle:
+    type: http
+    active: true
+    options:
+      method: Get
+      path: /load-google-oauth
+      preflight: true
+  upsertGoogle:
+    options:
+      method: Post
+      path: /upsert-google-oauth
+      preflight: true
+    type: http
+    active: true
+  loadFacebook:
+    options:
+      method: Get
+      path: /load-facebook-oauth
+      preflight: true
+    type: http
+    active: true
+  upsertFacebook:
+    options:
+      method: Get
+      path: /upsert-facebook-oauth
+      preflight: true
+    type: http
+    active: true
+env: {}
+memoryLimit: 100

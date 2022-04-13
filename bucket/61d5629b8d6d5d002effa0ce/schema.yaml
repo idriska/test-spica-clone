@@ -1,0 +1,76 @@
+_id: 61d5629b8d6d5d002effa0ce
+title: User
+description: Users
+icon: view_stream
+primary: username
+readOnly: false
+history: false
+properties:
+  username:
+    type: string
+    title: username
+    description: Description of the username input
+    options:
+      position: left
+  email:
+    type: string
+    title: email
+    description: Description of the email input
+    options:
+      position: left
+  wallet:
+    type: string
+    title: wallet
+    description: Description of the wallet input
+    options:
+      position: left
+  ship:
+    type: relation
+    title: ship
+    description: Description of the ship input
+    options:
+      position: right
+    relationType: onetoone
+    dependent: false
+    bucketId: 61d562a78d6d5d002effa0e9
+    primary: title
+  merchants:
+    type: relation
+    title: merchants
+    description: Description of the merchants input
+    options:
+      position: right
+    relationType: onetomany
+    dependent: false
+    primary: title
+    bucketId: 61d5629e8d6d5d002effa0d4
+  news_subscriber:
+    type: boolean
+    title: news_subscriber
+    description: Description of the news_subscriber input
+    options:
+      position: right
+    default: false
+  aaa:
+    type: storage
+    title: aaa
+    description: Description of the aaa input
+    options:
+      position: bottom
+  testmulti:
+    type: multiselect
+    title: testmulti
+    description: Description of the testmulti input
+    options:
+      position: bottom
+    items:
+      type: string
+      enum:
+        - a
+        - b
+        - c
+    maxItems: 2
+acl:
+  write: true==true
+  read: true==true
+order: 3

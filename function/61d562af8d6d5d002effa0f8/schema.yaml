@@ -1,0 +1,31 @@
+_id: 61d562af8d6d5d002effa0f8
+name: Update Triggers
+description: Update Trgiggers
+language: javascript
+timeout: 12
+triggers:
+  warUpdate:
+    active: true
+    type: bucket
+    options:
+      type: UPDATE
+      bucket: 61e562230cffb9002d35cabe
+  agreementUpdate:
+    active: true
+    type: bucket
+    options:
+      type: UPDATE
+      bucket: 61d562a58d6d5d002effa0e3
+  embargoUpdate:
+    active: true
+    type: bucket
+    options:
+      type: UPDATE
+      bucket: 61d562a68d6d5d002effa0e6
+env:
+  NEWS_BUCKET_ID: 61d562a98d6d5d002effa0ec
+  COUNTRY_BUCKET_ID: 61d5629d8d6d5d002effa0d1
+  NO_DEVKIT_DATABASE_WARNING: "TRUE"
+  PRODUCT_BUCKET_ID: 61d5629f8d6d5d002effa0d7
+  USER_PRODUCT_BUCKET_ID: 61d562a28d6d5d002effa0dd
+memoryLimit: 100

@@ -1,0 +1,15 @@
+_id: 61138da3fe6655002c2bf9a8
+name: Saml Identity Provider
+description: saml idp
+language: javascript
+timeout: 15
+triggers:
+  assert:
+    options:
+      method: Get
+      path: /saml/login
+      preflight: true
+    type: http
+    active: true
+env: {}
+memoryLimit: 100

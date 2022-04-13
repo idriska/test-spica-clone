@@ -1,0 +1,28 @@
+_id: 6167d9aad06c0d002d51d059
+name: test2
+language: javascript
+timeout: 60
+triggers:
+  default:
+    type: http
+    active: true
+    options:
+      method: Get
+      path: /insert50k
+      preflight: true
+  asdqwe:
+    options:
+      timezone: Europe/Istanbul
+      frequency: "* * * * *"
+    type: schedule
+    active: false
+  testIndex:
+    options:
+      method: Get
+      path: /testIndex
+      preflight: true
+    type: http
+    active: true
+env:
+  asd: "123"
+memoryLimit: 100
